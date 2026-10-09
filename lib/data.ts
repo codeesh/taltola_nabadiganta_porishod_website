@@ -51,7 +51,7 @@ export const bloodDonors: BloodDonor[] = [
   { name: "MD Naim", bloodGroup: "A+", address: "Taltola, Chatkhil", phone: "01883867939", lastDonation: "9 October 2026", totalDonated: 1 },
 ];
 export const bloodDonationStats: BloodDonationStats = {
-  totalDonated: 0,
+  totalDonated: 2,
 };
 
 export const navItems = [
