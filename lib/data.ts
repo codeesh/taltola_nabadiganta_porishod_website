@@ -40,7 +40,6 @@ export const bloodDonors: BloodDonor[] = [
   { name: "RAKIB HOSSEN", bloodGroup: "A+", address: "Taltola, Chatkhil", phone: "01855074040", lastDonation: "", totalDonated: 0 },
   { name: "Abdullah bin jisun", bloodGroup: "O+", address: "Taltola, Chatkhil", phone: "01613794319", lastDonation: "", totalDonated: 0 },
   { name: "Iyan Kabir Yasin", bloodGroup: "O+", address: "Taltola, Chatkhil", phone: "01864167071", lastDonation: "", totalDonated: 0 },
-  { name: "Iyan Kabir Yasin", bloodGroup: "O+", address: "Taltola, Chatkhil", phone: "01864167071", lastDonation: "", totalDonated: 0 },
   { name: "Abdul Kader", bloodGroup: "A-", address: "Taltola, Chatkhil", phone: "01852442223", lastDonation: "", totalDonated: 0 },
   { name: "Risalat Araf Dipro", bloodGroup: "B+", address: "Taltola, Chatkhil", phone: "01872196179", lastDonation: "", totalDonated: 0 },
   { name: "Monir Hossain Shanto", bloodGroup: "A-", address: "Taltola, Chatkhil", phone: "01715113069", lastDonation: "", totalDonated: 0 },
