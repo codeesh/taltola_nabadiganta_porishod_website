@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --orange: #f68712;
+  --ink: #141414;
+  --muted: #686868;
+  --paper: #fcfbf8;
+  --line: #e8e5df;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", "Noto Sans Bengali", sans-serif;
+}
+main { text-align: center; }
+main table { text-align: left; }
+main .page-image { display: none; }
+main :is(.max-w-xs, .max-w-sm, .max-w-md, .max-w-lg, .max-w-xl, .max-w-2xl, .max-w-3xl, .max-w-4xl) {
+  margin-inline: auto;
+}
+.bengali { font-family: "Noto Sans Bengali", sans-serif; }
+.display { letter-spacing: -0.055em; line-height: .96; }
+.eyebrow { letter-spacing: .17em; text-transform: uppercase; font-size: 11px; font-weight: 700; }
+.container-width { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+.orange-text { color: var(--orange); }
+.soft-grid {
+  background-image: linear-gradient(#e9e4dc 1px, transparent 1px), linear-gradient(90deg, #e9e4dc 1px, transparent 1px);
+  background-size: 42px 42px; opacity: .38;
+}
+.hero-orb { box-shadow: 0 30px 80px rgba(246, 135, 18, .27); }
+.reveal { animation: rise .8s cubic-bezier(.22,1,.36,1) both; }
+.reveal-delay { animation-delay: .12s; }
+.reveal-delay-2 { animation-delay: .22s; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+.lift { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.lift:hover { transform: translateY(-5px); box-shadow: 0 20px 45px rgba(20,20,20,.09); border-color: #d7d1c8; }
+.arrow-link { transition: gap .25s ease; }
+.arrow-link:hover { gap: 12px; }
+::selection { background: var(--orange); color: white; }

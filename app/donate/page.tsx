@@ -1,0 +1,7 @@
+import { PageHero } from "@/components/page-hero";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+
+export default function DonatePage() {
+  return <><SiteHeader /><main><PageHero eyebrow="Support the work" title="আপনার অবদান, আমাদের দায়িত্ব।" /><div className="container-width py-20"><p className="bengali max-w-2xl text-base leading-8 text-[#66625d]">আপনার অনুদান স্বাস্থ্য সহায়তা, শিক্ষা উদ্যোগ, খেলাধুলা, ত্রাণ, পরিবেশ ও কমিউনিটি ডেভেলপমেন্টের কাজে ব্যবহার করা হবে। প্রতিটি অবদান স্বচ্ছভাবে নথিভুক্ত করা আমাদের অঙ্গীকার।</p><div className="mt-12 grid gap-5 md:grid-cols-3">{["Health & humanitarian", "Education & youth", "Relief & environment"].map((x, i) => <div className="rounded-2xl border border-[#e8e4dc] bg-white p-6" key={x}><p className="eyebrow text-[#f68712]">Campaign 0{i + 1}</p><h3 className="mt-4 text-xl font-bold">{x}</h3><p className="mt-3 text-sm leading-6 text-[#77736e]">সম্পাদনাযোগ্য ক্যাম্পেইন বিবরণ এখানে যুক্ত হবে।</p><button className="mt-6 w-full rounded-full bg-[#141414] py-3 text-sm font-bold text-white">এই কাজে দিন ↗</button></div>)}</div><div className="mt-12 rounded-2xl bg-[#fff2e2] p-7"><p className="eyebrow text-[#f68712]">Donation details</p><h3 className="mt-3 text-2xl font-bold">আপনার পছন্দের মাধ্যমে সহায়তা করুন</h3><p className="mt-3 text-sm leading-6 text-[#77736e]">মোবাইল ব্যাংকিং / ব্যাংক তথ্য শিগগিরই যুক্ত হবে। অনুদান দেওয়ার আগে আমাদের সাথে যোগাযোগ করে বর্তমান তথ্য নিশ্চিত করুন।</p></div></div></main><SiteFooter /></>;
+}
